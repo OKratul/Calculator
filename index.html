@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+            <div class="calculator">
+                 <h1>Calculator</h1>
+            <div class="output">
+               <input type="text" id="output" placeholder="0">
+            </div>
+            <div class="calculetor-body">
+                <button value="1" class="btn" onclick="calculator(this.value)">1</button>
+                <button value="2" class="btn" onclick="calculator(this.value)">2</button>
+                <button value="3" class="btn" onclick="calculator(this.value)">3</button>
+                <button value="4" class="btn" onclick="calculator(this.value)">4</button>
+                <button value="5" class="btn" onclick="calculator(this.value)">5</button>
+                <button value="6" class="btn" onclick="calculator(this.value)">6</button>
+                <button value="7" class="btn" onclick="calculator(this.value)">7</button>
+                <button value="8" class="btn" onclick="calculator(this.value)">8</button>
+                <button value="9" class="btn" onclick="calculator(this.value)">9</button>
+                <button value="0" class="btn" onclick="calculator(this.value)">0</button>
+                <button value="." class="btn" onclick="calculator(this.value)">.</button>
+                <button value="+" class="btn" onclick="calculator(this.value)">+</button>
+                <button value="-" class="btn" onclick="calculator(this.value)">-</button>
+                <button value="*" class="btn" onclick="calculator(this.value)">*</button>
+                <button value="/" class="btn" onclick="calculator(this.value)">/</button>
+                <button value="c" class="btn" onclick="output.value=null">C</button>
+                <button value="del" class="btn" onclick="output.value = output.value.slice(0,-1)" >del</button>
+                <button value="=" class="btn" onclick="output.value= eval(output.value)" >=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculetor.js"></script>
+</body>
+</html>
